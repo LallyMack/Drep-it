@@ -1,0 +1,96 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "LallyMcClay"
+    },
+    "motivations": {
+      "@value": "I’m passionate about making Cardano a well-governed and community-driven platform. My journey in the Cardano community has been hands-on, from actively participating in governance to hosting and taking part in workshops during the lead-up to the constitution's ratification, where I am honoured to serve as a delegated representative. I aim to bring my experiences and dedication to future workstreams, supporting the Cardano ethos as an environment where every voice matters.\n\n"
+    },
+    "objectives": {
+      "@value": "As a DRep, my goal is to actively participate in Cardano’s governance and represent community members in crucial decision-making processes. I am committed to staying informed on Governance Actions and contributing thoughtfully to the long-term sustainability of the Cardano ecosystem."
+    },
+    "paymentAddress": {
+      "@value": "addr1q8j6vm467xnk4rwhfd4te7gwc5x7v0qg3dm7ll7t0epwdrw8y2mgg34jgzw7pvr2fxl7974wscrnlj9t8kknegxlqv0s5xp2tq"
+    },
+    "qualifications": {
+      "@value": "Active Cardano Community Member: Consistently engaged in governance discussions and community events.\nGovernance and Participation Experience: Extensive involvement in various Cardano workshops, including the Constitutional Workshops series, which involved structured discussions to shape the Draft Constitution.\nDelegate: Selected to represent community perspectives at the Cardano Constitutional Convention, demonstrating commitment to community input and governance excellence.\nOrganisational Skills: Experienced in planning, facilitating, and communicating effectively in both professional and community settings, supporting productive collaboration and informed decision-making."
+    },
+    "references": [
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "Linktree"
+        },
+        "uri": {
+          "@value": "https://linktr.ee/CardanoDRep"
+        }
+      },
+      {
+        "@type": "Identity",
+        "label": {
+          "@value": "X Profile"
+        },
+        "uri": {
+          "@value": "https://x.com/LallyMcClay"
+        }
+      }
+    ]
+  }
+}
