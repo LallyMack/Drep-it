@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "body": {
+    "comment": "In my view, the 2025 Vision & Roadmap for Cardano is a well-rounded strategy that balances immediate improvements & long-term development goals.\nKey areas like scalability improvements, the modular design, and  functionalities informed my yes vote rationale balance, detailed below: \n\nPoints in Favour\nScalability Focus:\nI appreciate that the roadmap has an emphasis on scaling solutions for both Layer 1 and Layer 2. In my view, this approach is good for handling increased demand and supporting real-world applications.\nModularity, Flexibility:\nThe modular design is a positive for me because it supports future integrations (like ZK proofs for Bitcoin DeFi, enhanced privacy features) and a range of use cases -  important for maintaining a competitive edge.\nCommunity and Governance Alignment:\nThe roadmap was developed through consultations with stakeholders and includes mechanisms for ongoing feedback from DReps. This transparency and community involvement ensure a collective voice gets heard and that development stays aligned with the Constitution. \n\nStrategic Budget Alignment:\nIn my view,  supporting this document helps ensure resources be directed towards initiatives with high impact, so supports efficient and effective development.\n\nConsiderations for Improvement\nClarity in Timelines and Deliverables:\nSome initiatives could benefit from clearer, more tangible milestones. Breaking down the phases could improve transparency and set clearer expectations.\n\nAmbition v Focus:\nThe roadmap proposes a wide range of scalability initiatives, & I do have some concerns about spreading resources thinly or, intentions versus reality. Focusing on a couple of key priorities now might enable more immediate and less vague or perceived benefits, while planning for additional functionalities later.\n\nCost and Delivery Estimates:\n Including more detailed approximations regarding timelines and costs would provide a better picture of the required resource commitment. I understand these details may evolve, but a rough estimate would certainly add to the document's clarity and community confidence.\n\nConclusion\nOverall, I believe that despite some areas where additional specificity would be beneficial, the roadmap is a robust and inclusive plan for advancing Cardano’s ecosystem. Its focus on scalability, modular design, and community-driven governance aligns well with the vision for Cardano’s long-term success. For these reasons, I support a yes vote.\n"
+  },
+  "hashAlgorithm": "blake2b-256"
+}
