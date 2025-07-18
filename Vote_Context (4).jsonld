@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "I'm voting Yes to support this proposal because I believe maintaining and developing open governance tools like GovTool is essential for Cardano’s ecosystem.\n\nThis proposal meets the criteria outlined in the Constitution, including Article III Section 4, which connects to the ecosystem budget, and Article IV Section 1, which supports tools that maintain and grow the blockchain ecosystem. It also contributes directly to participatory and decentralized governance, which is at the heart of Article III overall.\n\nGovTool is a public good. It’s not owned by a company, it’s not commercial, and it exists to make Cardano governance accessible and fair for everyone. It’s open source, built with input from the community, and designed to be reused and built upon. That approach takes more time and coordination, but it's the right one for a decentralized ecosystem.\n\nThe proposal includes a clear breakdown of costs, covering 12 months of work across all environments (Dev, QA, Preview, PreProd, Mainnet). It also explains how funds are allocated and provides historical cost data for transparency. Most of the real effort sits in the backend and infrastructure that powers not just GovTool’s interface, but many other governance tools in the ecosystem too.\n\nThis funding will help ensure that GovTool remains a reliable, community-owned platform for participation.\n\nI also note that any unused funds will be returned to the treasury, which shows good practice.\n\nFor all these reasons, I believe this is a fair and necessary proposal that strengthens Cardano’s ability to govern itself."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
