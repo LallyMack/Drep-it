@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "I’m voting YES to fund the Catalyst 2025 Proposal by Input Output. This initiative strengthens decentralized innovation funding, improves Catalyst infrastructure, and ensures three robust funding rounds (F14–F16) to support long-term ecosystem sustainability.\n\nMy position is consistent with my earlier vote in Ekklesia and this proposal has undergone extensive prior scrutiny. While I’ve highlighted risks of strong projects being overlooked due to complexity and visibility challenges, this particular proposal comes from a proven contributor with a track record of delivering critical infrastructure for Cardano’s growth.\n\nSupporting this aligns with my principles of responsible stewardship, long-term strategic investment, and enabling the community to thrive through sustainable, decentralized funding mechanisms.\n\n"
+  },
+  "hashAlgorithm": "blake2b-256"
+}
