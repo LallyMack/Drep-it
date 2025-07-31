@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "I’m voting YES to fund zkFold’s ZK Rollup development. This initiative delivers a general-purpose, zero-knowledge rollup solution that will significantly enhance Cardano’s scalability, reduce transaction costs, and enable broader ecosystem adoption while maintaining security.\n\nThis vote reflects my intention to move forward without unnecessary delays and uphold the community consensus reached previously. I believe it’s important to disperse funding to enable critical infrastructure development rather than risk underfunding ecosystem progress when treasury reserves allow for sustainable investment.\n\nWhile I 'm not keen to  typically support future individual treasury withdrawal requests under 1.5M ADA(preferring these to be managed via Catalyst or bundled entities) I am making an exception this round due to the lack of early clarity for proposers. Strong oversight mechanisms (audited smart contracts, multi-party governance, milestone-based disbursement, and full transparency) provide confidence that funds will be used responsibly.\n\nThis aligns with my DRep principles of supporting sustainable, long-term innovation, enabling scalable infrastructure, and respecting collective decisions that strengthen Cardano’s governance and ecosystem health.\n\n"
+  },
+  "hashAlgorithm": "blake2b-256"
+}
