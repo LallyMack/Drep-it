@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "I’m voting YES to fund the development of a ZK Bridge for Cardano. This proposal lays the groundwork for a secure, trustless bridge that can strengthen interoperability and open new opportunities for Cardano to connect with other ecosystems.\n\nThis vote reflects my intention to move forward with previous budget approvals and voting rounds, respecting the community consensus achieved through all stages of the process. While some smaller-scale initiatives may, in future, be better suited for Catalyst or delivered as part of bundled funding, I believe it’s important at this stage to support essential infrastructure proposals like this one. Strong oversight mechanisms including audited smart contracts, multi-party governance, milestone disbursements, and transparency give me confidence that the funds will be responsibly managed.\n\nThis aligns with my DRep principles of fostering sustainable innovation and strengthening the long-term foundations of the Cardano ecosystem."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
