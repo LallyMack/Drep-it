@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "I’m voting YES to fund the Pallas Rust tooling proposal as I believe it provides essential elements that underpin critical Cardano projects including Aiken, Lucid, and Mithril, Sustains this opensource library and ensures developers can continue building reliable explorers, Smart contracts and wallets, strengthening  ecosystem’s resilience and attracting a wider developer community outside of Haskell.\n\nTxPipe team have a strong track record of delivering opensource solutions for Cardano over a few years. The requested funding is modest relative to its ecosystem impact and supports ongoing maintenance, bug fixes, and enhancements. This investment helps prevent stagnation of a foundational toolset and supports long-term innovation.\n\nWhile smaller requests like this might, in future, be better suited for Catalyst or bundled under broader initiatives, this round is an opportunity to learn and refine the treasury withdrawal process. It’s important not to hold up positive votes on essential infrastructure that has already been reviewed and approved in earlier stages.\n\nThis aligns with my priorities as a DRep: sustainable infrastructure, long-term strategic thinking, support for proven open-source contributors, and enabling a healthy, diverse developer ecosystem for Cardano."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
