@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "I am voting Yes on this proposal based on the operational resilience it provides to Cardano's governance system rather than any desire to reduce the size or importance of the Constitutional Committee.\n\nThe CC currently consists of seven members and I believe maintaining a seven-member committee should remain the objective. A diverse, capable, and fully populated Committee strengthens governance and ensures constitutionality is maintained, with CC oversight ensuring things are done in the way intended. Continued effort should, in my opinion be made to attract, support, and retain qualified Constitutional Committee members going forward.\n\nThe current situation creates unnecessary operational risk. With the committeeMinSize parameter also set to seven, a single resignation, vacancy, or period of unavailability could place governance processes at risk of disruption. This proposal introduces a buffer that allows governance to continue functioning while the community takes the necessary steps to restore the Committee to its intended size in the event of an unexpected loss of just one member.\n\nImportantly, this proposal does not reduce the Constitutional Committee to five members, nor does it change its constitutional role. It simply reduces the minimum number of active members required for governance operations to continue. The expectation remains that the Committee should operate with seven members wherever possible.\n\nIn my view, reducing the risk of governance paralysis while preserving constitutional safeguards is a reasonable and proportionate change."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
